@@ -22,7 +22,7 @@ public class JsonKafkaProducer {
 
         Message<User> message = MessageBuilder
                 .withPayload(data)
-                .setHeader(KafkaHeaders.TOPIC, "springbootkafka")
+                .setHeader(KafkaHeaders.TOPIC, "springbootkafka_json")
                 .build();
         kafkaTemplate.send(message);
 
